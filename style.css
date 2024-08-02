@@ -1,0 +1,273 @@
+/* selettori - indicatori che dicono a CSS quale o quali elementi devono essere modificati */
+
+/* SELETTORE PER TAG (cellule di html)
+h1  {
+  regole
+  color: red;
+  background-color: black;
+   }
+h2{
+  color: blue;
+   }
+h4 {
+     color: pink;
+     background-color: aqua;
+   }
+
+   /* SELETTORE PER CLASSE (DA UILIZZARE SINGOLARMENTE PER GLI ELEMENTI) usare una sola parola nome
+
+.titoloCard{
+     background-color: blueviolet;
+   }
+   */
+
+   /* INIZIO STILE PAGINA */
+
+body{
+   font-family: monospace;
+   margin: 0;
+  }
+
+  /* navbar */
+
+nav{
+    background-color: rgba(0, 0, 0, 0.803);
+    color: whitesmoke;
+    min-height: 60px;
+
+    display: flex;
+
+    border-bottom: 2px solid red;  /* bordo della navbar in basso*/
+  }
+
+  /* devo spostare rispetto al contenitore */
+
+.logoContainer {
+   display: flex;
+
+   align-items: center; /* allineo l'elemento rispetto al contenitore*/
+   margin-left: 20px;
+
+  }
+
+.logo {
+   width: 40px;
+
+   box-shadow: 2px 2px rgba(255,255,255,0.7);  /* dare ombra al logo, con direzione verso destra e basso e il colore*/
+   border-radius: 50%;
+  }
+
+.navLinks{
+    list-style: none;
+
+    display: flex;
+
+    width: 20%;  /* larghezza con percentuale (o in alternativa posso usare px) */
+    align-items: center; 
+    justify-content: space-between;
+  }
+
+
+  /* header*/
+
+header{
+    background-image: url('/media/spiderman.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    color: whitesmoke;
+
+    display: flex;
+
+    flex-direction: column;  /* uno sotto l'altro */
+
+    justify-content: center;
+    align-items: center;
+
+    background-attachment: fixed;  /* effetto parallasse*/
+  }
+
+.titoloHeader{
+    font-size: 80px;
+  }
+
+.sottotitoloHeader{
+    font-size: 30px;
+  }
+
+
+  /* sezione card */
+
+.contenitoreArticoli{
+  display: flex;  /* uno accanto all'altro, di fianco */
+
+  justify-content: space-around;   /* do spazio in orizzontale */
+  margin-top: 20px;
+}
+
+.sezioneCard{
+    min-height: 80vh;
+
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+
+    background-image: url('/media/marvel.png');
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+
+    background-attachment: fixed;  /* effetto parallasse*/
+  }
+
+.titoloSezioneCard{
+    font-size: 40px;
+    /*  allineamento testo*/
+    text-align: center;
+  }
+
+.titoloCard{
+    /*  allineamento testo*/
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+  }
+
+.card{
+    width: 300px;
+    height: 300px;
+    background-image: url('/media/gruppo.png');
+    background-position: cenetr;
+    background-size: cover;
+    color: whitesmoke;
+
+    border: 10px solid black;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-evenly;  /* equidistanti */
+
+    box-shadow: 5px 5px rgba(141, 0, 0, 0.43);
+
+  }
+
+.sottotitoloCard{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+  }
+
+.titoloSottoCard{
+    font-weight: 800;
+   }
+
+
+   /* sezione form */
+
+.sezioneForm{
+    background-image: url('/media/milesmorales.png');
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    
+    background-attachment: fixed;  /* effetto parallasse*/
+   }
+
+.titoloForm{
+    text-align: center;
+    font-size: 40px;
+   }
+
+form{
+    min-height: 300px;
+    width: 300px;
+
+    border: 2px solid black;
+    border-radius: 20px;
+
+    background-color: rgba(0, 0, 0, 0.394) ;
+
+    margin-left: 250px;
+    box-shadow: 5px 5px rgba(141, 0, 0, 0.43);
+
+    background-attachment: fixed;
+   }
+
+.contenitoreInput{
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px;
+   }
+
+label { 
+    font-size: 20px;
+    font-weight: 600;
+
+    margin-bottom: 5px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+
+.contenitoreBottone{
+
+    display: flex;
+
+    justify-content: center;
+    margin-bottom: 20px;
+   }
+
+button{
+    width: 80px;
+    height: 40px;
+    font-weight: bold;
+    font-size: large;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid whitesmoke;
+    
+    background-color: red;
+    border-radius: 20px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+   }
+
+
+   /* Footer */
+
+footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    min-height: 20px;
+    color: red;
+    font-size: 15px;
+
+    border-top: 2px solid red;
+    padding: 15px;
+   }
+
+.footerLinks{
+    display: flex;
+    justify-content: space-evenly; 
+  }
+
+.contenitoreCopyright{
+    display: flex;
+
+    align-items: center;
+    justify-content: end;
+   }
+
+.aulabLink{
+    color: whitesmoke;
+
+    margin-left: 10px;
+   }

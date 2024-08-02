@@ -1,0 +1,48 @@
+.btn {
+   padding: 20px; /* 20mpx in tutte le direzioni */
+   /* se scrivessi padding: 20px 40px vuol dire che 20 pixel si sono messi in vrticale (asse y) e 40 in orizzontale (asse x) */
+
+   /* padding-left: 40px;   cambio il padding solo a sinistra */
+
+   /*margin-left: 100px;
+     margin-right: 50px;
+     margin-top: 400px;*/
+
+   margin: 40px;  /* modifico tutti i margini del bottone, 40 pixel in tutte le direzioni */
+   border: 1px solid red;   /* accetta come parametri lo spessore, il colore, lo stile*/
+   }
+
+
+/* il flex box rende il layout flessibile, ci da la possibilità di poter spostare gli elementi nello spazio sfruttando le specifiche proprietà CSS*/
+/* avremo cioè un contenitore di riferimento di cui sposteremo il contenuto */
+/* ogni elemento in html ha una proprietà detta display */
+
+/* div è un contenitore bloccante */
+
+div {
+    display: block;   /* di default */
+    }
+
+.contenitore {
+    height: 500px;
+    width: 500px;
+    background-color: steelblue;
+
+    display: flex;     /* il flex dato al padre cambia il contenuto in senso orizzontale*/
+    flex-direction: column;
+
+    justify-content: center;  /*verticale*/
+    align-items: center;      /*orizzontale*/
+    }
+
+.box {
+        background-color: orange;
+
+        border: black 2px solid;
+
+        height: 70px;
+        width: 70px;
+        margin: 10px;
+        }
+
+ 
